@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+    font-family: cairo;
+}
+h1 , h2 , h3{
+    font-family: Almarai;
+}
+/* تنسيقات اذا بدي غير تنسيقات الازرار */
+.btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    filter: brightness(90%);
+}
+.img-translate{
+    animation: translate-img 1s ease-in-out infinite;
+
+}
+
+@keyframes  translate {
+    0%,
+    100%{
+        transform:  translatex(-10px);
+    }
+    50%{
+        transform:  translatex(10px);
+    }
+}
+
+.features{
+    background-color: rgba(132, 139, 146, 0.678);
+}
+

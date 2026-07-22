@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title> LMS | دليلك للذكاء الاصطناعي </title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+<body class="overflow-x-hidden ">
+  <!-- start navpar -->
+
+
+  <nav class="bg-white border-gray-200 dark:bg-gray-900 drop-shadow-sm  w-full ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
+      <a href="https://v3.flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="https://flowbite.com/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+      </a>
+      <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+        <button type="button" data-dropdown-toggle="language-dropdown-menu"
+          class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+          <svg class="w-5 h-5 rounded-full me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900">
+            <path fill="#b22234" d="M0 0h7410v3900H0z" />
+            <path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300" />
+            <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
+            <g fill="#fff">
+              <g id="d">
+                <g id="c">
+                  <g id="e">
+                    <g id="b">
+                      <path id="a" d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z" />
+                      <use xlink:href="#a" y="420" />
+                      <use xlink:href="#a" y="840" />
+                      <use xlink:href="#a" y="1260" />
+                    </g>
+                    <use xlink:href="#a" y="1680" />
+                  </g>
+                  <use xlink:href="#b" x="247" y="210" />
+                </g>
+                <use xlink:href="#c" x="494" />
+              </g>
+              <use xlink:href="#d" x="988" />
+              <use xlink:href="#c" x="1976" />
+              <use xlink:href="#e" x="2470" />
+            </g>
+          </svg>
+          English (US)
+        </button>
+        <!-- Dropdown -->
+        <div
+          class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700"
+          id="language-dropdown-menu">
+          <ul class="py-2 font-medium" role="none">
+            <li>
+              <a href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg"
+                    id="flag-icon-css-us" viewBox="0 0 512 512">
+                    <g fill-rule="evenodd">
+                      <g stroke-width="1pt">
+                        <path fill="#bd3d44"
+                          d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                          transform="scale(3.9385)" />
+                        <path fill="#fff"
+                          d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                          transform="scale(3.9385)" />
+                      </g>
+                      <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)" />
+                      <path fill="#fff"
+                        d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
+                        transform="scale(3.9385)" />
+                    </g>
+                  </svg>
+                  English (US)
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    id="flag-icon-css-de" viewBox="0 0 512 512">
+                    <path fill="#ffce00" d="M0 341.3h512V512H0z" />
+                    <path d="M0 0h512v170.7H0z" />
+                    <path fill="#d00" d="M0 170.7h512v170.6H0z" />
+                  </svg>
+                  Deutsch
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    id="flag-icon-css-it" viewBox="0 0 512 512">
+                    <g fill-rule="evenodd" stroke-width="1pt">
+                      <path fill="#fff" d="M0 0h512v512H0z" />
+                      <path fill="#009246" d="M0 0h170.7v512H0z" />
+                      <path fill="#ce2b37" d="M341.3 0H512v512H341.3z" />
+                    </g>
+                  </svg>
+                  Italiano
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512">
+                    <defs>
+                      <path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z" />
+                    </defs>
+                    <path fill="#de2910" d="M0 0h512v512H0z" />
+                    <use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a" />
+                    <use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a" />
+                    <use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a" />
+                    <use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a" />
+                    <use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a" />
+                  </svg>
+                  中文 (繁體)
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button data-collapse-toggle="navbar-language" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-language" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+        <ul
+          class="flex md:items-center  flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+              aria-current="page"> الرئيسية</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              الكورسات</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              الخدمات</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              المدونة</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              تواصل معنا</a>
+          </li>
+          <li class="mr-2">
+            <button id="theme-toggle" type="button"
+              class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none rounded-lg text-sm p-2.5">
+              <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+              </svg>
+              <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                  fill-rule="evenodd" clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end start navpar -->
+
+
+  <!-- Start Course pag header -->
+  <section class="py-[30px] bg-blue-50 dark:bg-slate-700">
+    <div class="page-header flex max-w-screen-xl mx-auto justify-between">
+      <div class="grow flex flex-col justify-center">
+        <h2 class="text-center text-4xl font-bold text-blue-500 mb-5">دليلك للذكاء الاصطناعي </h2>
+        <p class="text-center mb-5 font-bold text-blue-800 dark:text-blue-100 ">الكاتبة<span> دعاء وليد علي زينو </span></p>
+        <div class="flex gap-3 dark:text-gray-200 justify-center">
+          <div>
+            <i class="fa-regular fa-square-check"></i>
+            نيسان /2025
+          </div>
+          <div>
+            <i class="fa-regular fa-square-check"></i>
+            الذكاءالاصطناعي
+          </div>
+          <div>
+            <i class="fa-regular fa-square-check"></i>
+            العربية
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- end Start Course pag header -->
+
+
+  <section class="blog-content px-4 md:px-6 bg-white dark:bg-slate-800">
+  <div class="flex flex-col lg:flex-row max-w-screen-xl mx-auto gap-6">
+
+    <!-- المحتوى -->
+    <div class="content w-full lg:w-[70%] my-5 hero-info">
+
+      <!-- Breadcrumb -->
+      <nav class="flex mb-5 text-sm">
+        <ol class="flex flex-wrap items-center gap-2 text-gray-500">
+          <li>الرئيسية</li>
+          <li> / </li>
+          <li>الذكاء الاصطناعي</li>
+          <li> / </li>
+          <li class="text-gray-700 dark:text-gray-400 font-medium">دليلك للذكاء الاصطناعي</li>
+        </ol>
+      </nav>
+
+      <!-- صورة -->
+      <img class="rounded-xl w-full h-[300px] object-cover" src="assets/images/qqq.jfif" alt="">
+
+      <!-- معلومات -->
+      <div class="flex flex-col md:flex-row justify-between gap-4 p-4 mt-5  bg-gray-50 dark:bg-slate-600 rounded-xl text-sm text-gray-600 dark:text-gray-50">
+        <div class="flex flex-wrap gap-4">
+          <span>📅 نيسان 2025</span>
+          <span>📚 14 درس</span>
+          <span>🌐 العربية</span>
+        </div>
+        <div class="flex gap-4 text-lg">
+          <i class="fa-brands fa-whatsapp cursor-pointer hover:text-green-500"></i>
+          <i class="fa-brands fa-facebook-messenger cursor-pointer hover:text-blue-500"></i>
+          <i class="fa-brands fa-instagram cursor-pointer hover:text-pink-500"></i>
+        </div>
+      </div>
+
+      <!-- الوصف -->
+      <div id="description " class="mt-6 ">
+
+        <!-- مميزات -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-5 bg-gray-50 dark:bg-slate-600 dark:text-gray-50 rounded-xl">
+          
+          <ul class="flex flex-col gap-3 text-gray-700 dark:text-gray-300">
+            <li>✔️ أكثر من 2000 طالب التحق بالدبلوم</li>
+            <li>✔️ شرح احترافي لأدوات الويب</li>
+            <li>✔️ تطبيقات عملية واقعية</li>
+            <li>✔️ تحديثات مستمرة</li>
+          </ul>
+
+          <ul class="flex flex-col gap-3 text-gray-700 dark:text-gray-300">
+            <li>✔️ دعم فني مباشر</li>
+            <li>✔️ مشاريع حقيقية</li>
+            <li>✔️ مناسب للمبتدئين</li>
+            <li>✔️ شهادة معتمدة</li>
+          </ul>
+
+        </div>
+
+        <!-- نص -->
+        <p class="mt-6 leading-8 text-gray-700 dark:text-gray-200">
+          هذا الدليل الشامل في الذكاء الاصطناعي مصمم ليمنحك فهماً عملياً وحديثاً للتقنيات الرقمية،
+          مع التركيز على التطبيقات الواقعية في سوق العمل.
+        </p>
+
+        <img class="mt-2 rounded-xl w-full h-[300px]" src="assets/images/aa.jfif" alt="">
+
+        <p class="mt-6 leading-8 text-gray-700 dark:text-gray-200">
+          ستتعلم كيفية استخدام الأدوات الحديثة لبناء حلول ذكية تساعدك على تطوير مشاريعك الرقمية
+          وتحقيق نتائج احترافية.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="widgets w-full lg:w-[30%] bg-gray-50 dark:bg-slate-600 dark:text-gray-50 rounded-xl p-5 my-5 hero-img ">
+
+      <!-- التصنيفات -->
+      <div class="mb-8  ">
+        <h2 class="text-xl font-semibold mb-4 text-gray-800 dark:text-blue-600">التصنيفات</h2>
+        <div class="flex flex-col gap-3 text-gray-600 dark:text-gray-50">
+          <a href="#" class="hover:text-blue-600">الذكاء الاصطناعي</a>
+          <a href="#" class="hover:text-blue-600">تطوير الويب</a>
+          <a href="#" class="hover:text-blue-600">التسويق الرقمي</a>
+          <a href="#" class="hover:text-blue-600">ريادة الأعمال</a>
+        </div>
+      </div>
+
+      <!-- أحدث الأخبار -->
+     <div>
+  <h2 class="text-xl font-semibold mb-4 text-gray-800 dark:text-blue-600 ">آخر المقالات</h2>
+
+  <div class="flex gap-3 mb-6">
+    <img class="w-16 h-16 rounded-lg object-cover" src="assets/images/dddddd.jfif">
+    <div>
+      <p class="font-medium text-sm">أساسيات البرمجة للمبتدئين</p>
+      <span class="text-xs text-gray-500 dark:text-gray-400">مايو 2025</span>
+    </div>
+  </div>
+
+  <div class="flex gap-3 mb-6">
+    <img class="w-16 h-16 rounded-lg object-cover" src="assets/images/ddddd.jfif">
+    <div>
+      <p class="font-medium text-sm">كيف تبدأ في تطوير الويب</p>
+      <span class="text-xs text-gray-500 dark:text-gray-400">يونيو 2025</span>
+    </div>
+  </div>
+
+  <div class="flex gap-3 mb-6">
+    <img class="w-16 h-16 rounded-lg object-cover" src="assets/images/dddd.jfif">
+    <div>
+      <p class="font-medium text-sm">أفضل أدوات الذكاء الاصطناعي</p>
+      <span class="text-xs text-gray-500 dark:text-gray-400">يوليو 2025</span>
+    </div>
+  </div>
+
+  <div class="flex gap-3 mb-6">
+    <img class="w-16 h-16 rounded-lg object-cover" src="assets/images/ddd.jfif">
+    <div>
+      <p class="font-medium text-sm">تصميم واجهات المستخدم الحديثة</p>
+      <span class="text-xs text-gray-500 dark:text-gray-400">أغسطس 2025</span>
+    </div>
+  </div>
+
+  <div class="flex gap-3 mb-6">
+    <img class="w-16 h-16 rounded-lg object-cover" src="assets/images/dd.jfif">
+    <div>
+      <p class="font-medium text-sm">أمن المعلومات للمبتدئين</p>
+      <span class="text-xs text-gray-500 dark:text-gray-400">سبتمبر 2025</span>
+    </div>
+  </div>
+
+  <div class="flex gap-3 mb-6">
+    <img class="w-16 h-16 rounded-lg object-cover" src="assets/images/d.jfif">
+    <div>
+      <p class="font-medium text-sm">مستقبل تطبيقات الهاتف</p>
+      <span class="text-xs text-gray-500 dark:text-gray-400">أكتوبر 2025</span>
+    </div>
+  </div>
+</div>
+    </div>
+
+  </div>
+</section>
+
+ <section class="py-8 bg-blue-50 dark:bg-slate-700">
+
+  <!-- العنوان -->
+  <div class="max-w-screen-xl mx-auto px-4 mb-10 flex justify-between items-center">
+    <h2 class="text-xl md:text-3xl font-bold text-gray-800 dark:text-white">
+      مقالات قد تهمك
+    </h2>
+  </div>
+
+  <!-- السلايدر -->
+  <div class="swiper max-w-screen-xl mx-auto px-4">
+
+    <div class="swiper-wrapper boxes">
+
+      <!-- card -->
+      <div class="swiper-slide">
+        <div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group">
+
+          <img class="w-full h-[180px] md:h-[200px] object-cover group-hover:scale-105 transition duration-300"
+            src="assets/images/w.jfif" alt="">
+
+          <div class="p-4 text-right">
+            <span class="text-xs text-blue-600 font-medium">تطوير الويب</span>
+
+            <h3 class="mt-2 text-sm text-[12px] md:text-base font-semibold text-gray-800 dark:text-white leading-6">
+              كيف تبدأ في برمجة المواقع باحترافية.
+            </h3>
+
+            <div class="mt-3 text-xs text-gray-500">
+              14 مارس 2025
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- card -->
+      <div class="swiper-slide">
+        <div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group">
+
+          <img class="w-full h-[180px] md:h-[200px] object-cover group-hover:scale-105 transition duration-300"
+            src="assets/images/ww.jfif" alt="">
+
+          <div class="p-4 text-right">
+            <span class="text-xs text-blue-600 font-medium">الذكاء الاصطناعي</span>
+
+            <h3 class="mt-2 text-sm md:text-base text-[12px] font-semibold text-gray-800 dark:text-white leading-6">
+              مستقبل الذكاء الاصطناعي في الأعمال
+            </h3>
+
+            <div class="mt-3 text-xs text-gray-500">
+              08 أبريل 2025
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- card -->
+      <div class="swiper-slide ">
+        <div class="bg-white dark:bg-slate-800  rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group">
+
+          <img class="w-full h-[180px] md:h-[200px] object-cover group-hover:scale-105 transition duration-300"
+            src="assets/images/www.jfif" alt="">
+
+          <div class="p-4 text-right">
+            <span class="text-xs text-blue-600 font-medium">UI/UX</span>
+
+            <h3 class="mt-2 text-sm text-[12px] md:text-base font-semibold text-gray-800 dark:text-white leading-6">
+              أهمية تجربة المستخدم في الرقمنة 
+            </h3>
+
+            <div class="mt-3 text-xs text-gray-500">
+              14 مايو 2025
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- card -->
+      <div class="swiper-slide">
+        <div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group">
+
+          <img class="w-full h-[180px] md:h-[200px] object-cover group-hover:scale-105 transition duration-300"
+            src="assets/images/wwww.jfif" alt="">
+
+          <div class="p-4 text-right">
+            <span class="text-xs text-blue-600 font-medium">التسويق الرقمي</span>
+
+            <h3 class="mt-2 text-sm md:text-base text-[12px] font-semibold text-gray-800 dark:text-white leading-6">
+              طرق زيادة المبيعات أونلاين كاملة
+            </h3>
+
+            <div class="mt-3 text-xs text-gray-500">
+              06 أكتوبر 2025
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- أزرار -->
+  <div class="flex justify-center gap-4 mt-8">
+
+    <button class="btn-prev w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 dark:hover:bg-slate-700 transition">
+      <i class="fa-solid fa-chevron-right text-gray-700 dark:text-white"></i>
+    </button>
+
+    <button class="btn-next w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 dark:hover:bg-slate-700 transition">
+      <i class="fa-solid fa-chevron-left text-gray-700 dark:text-white"></i>
+    </button>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+  <!-- start footer section -->
+  <footer class="relative border-t-4 border-blue-800 bg-slate-900 text-gray-200"
+    style="background-image: url('assets/images/ss.webp'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+
+    <!-- overlay -->
+    <div class="absolute inset-0 bg-black/60 z-10"></div>
+
+    <div class="relative z-20 max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+
+      <!-- about -->
+      <div class="f1-section">
+        <h3 class="text-2xl font-bold mb-4">سكوول تك</h3>
+        <p class="leading-7">نحن نقدم أفضل الحلول الرقمية، تصميم مواقع، تطوير تطبيقات واستراتيجيات تسويق متكاملة.</p>
+      </div>
+
+      <!-- important links -->
+      <div class="f2-section">
+        <h3 class="text-2xl font-bold mb-4">روابط مهمة</h3>
+        <ul class="flex flex-col gap-2">
+          <li><a href="#" class="hover:text-blue-400 transition">الرئيسية</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">حول الشركة</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">الكورسات</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">المدونة</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">اتصل بنا</a></li>
+        </ul>
+      </div>
+
+      <!-- top courses -->
+      <div class="f3-section">
+        <h3 class="text-2xl font-bold mb-4">الكورسات الرائجة</h3>
+        <ul class="flex flex-col gap-2">
+          <li><a href="#" class="hover:text-blue-400 transition">تطوير الويب</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">الذكاء الاصطناعي</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">UI / UX</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">التسويق الرقمي</a></li>
+        </ul>
+      </div>
+
+      <!-- newsletter -->
+      <div class="f4-section">
+        <h3 class="text-2xl font-bold mb-4">النشرة البريدية</h3>
+        <p class="mb-3">اشترك لتصلك أحدث الأخبار والتحديثات الرقمية.</p>
+        <form action="" class="flex flex-col gap-3">
+          <input type="email" placeholder="البريد الالكتروني"
+            class="h-10 border border-gray-400 px-4 rounded-md text-slate-200 placeholder:text-gray-400 bg-slate-800 focus:outline-none focus:border-blue-500">
+          <button
+            class="bg-blue-700 hover:bg-blue-900 text-white p-2 rounded-md font-medium transition duration-300 shadow-md cursor-pointer">
+            اشترك الآن
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- copyright -->
+    <div
+      class="relative z-20 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 border-t border-gray-600 py-5 px-6 text-sm">
+      <p>© 2026 سكوول تك. كل الحقوق محفوظة.</p>
+      <p>تصميم وتطوير المواقع الرقمية</p>
+    </div>
+
+  </footer>
+  <!-- end footer section -->
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
