@@ -55,18 +55,16 @@ ScrollReveal().reveal('.hero-info' , {
     delay:400,          // تاخير الصورة
     duration:800,      // مدة الحركة بالمللي ثانية
     distance:'50px',   // مقدار التحريك قبل الظهور
-    origin:'right',   // جهة الحركة اسفل
+    origin:'bottom',   // جهة الحركة اسفل
     easing:'ease-in-out',   // نوع الحركة
-
 });
 
 ScrollReveal().reveal('.hero-img' , {
-    delay:400,          // تاخير الصورة
+     delay:400,          // تاخير الصورة
     duration:800,      // مدة الحركة بالمللي ثانية
     distance:'50px',   // مقدار التحريك قبل الظهور
-    origin:'left',   // جهة الحركة اسفل
+    origin:'top',   // جهة الحركة اسفل
     easing:'ease-in-out',   // نوع الحركة
-
 });
 
 ScrollReveal().reveal('.boxes' , {
@@ -92,7 +90,7 @@ ScrollReveal().reveal('.about-info' , {
     delay:400,          // تاخير الصورة
     duration:800,      // مدة الحركة بالمللي ثانية
     distance:'50px',   // مقدار التحريك قبل الظهور
-    origin:'right',   // جهة الحركة اسفل
+    origin:'top',   // جهة الحركة اسفل
     easing:'ease-in-out',   // نوع الحركة
 
 });
@@ -101,9 +99,8 @@ ScrollReveal().reveal('.about-img' , {
     delay:400,          // تاخير الصورة
     duration:800,      // مدة الحركة بالمللي ثانية
     distance:'50px',   // مقدار التحريك قبل الظهور
-    origin:'left',   // جهة الحركة اسفل
+    origin:'bottom',   // جهة الحركة اسفل
     easing:'ease-in-out',   // نوع الحركة
-
 });
 
 ScrollReveal().reveal('.coursrs' , {
